@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil · Başvuru Doldur</title>
+  <link rel="stylesheet" href="../ui.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="sheet">
+  <header class="top">
+    <div>
+      <p class="mark" id="brand">Başvuru Doldur</p>
+      <h1 id="page-title">Profil</h1>
+      <p id="page-lead" class="lead"></p>
+    </div>
+    <div class="switch" role="group" id="lang-switch">
+      <button id="lang-tr" type="button" aria-pressed="true">Türkçe</button>
+      <button id="lang-en" type="button" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <section>
+    <h2 id="profile-heading"></h2>
+    <p id="profile-lead" class="muted"></p>
+    <div id="profile"></div>
+    <div class="save-row">
+      <button id="save-profile" class="primary" type="button"></button>
+      <p id="profile-status" class="saved"></p>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="snippets-heading"></h2>
+    <p id="snippets-lead" class="muted"></p>
+    <div id="snippets"></div>
+    <form id="snippet-form" class="composer">
+      <label class="field"><span id="snippet-title-label"></span>
+        <input id="snippet-title" type="text">
+      </label>
+      <label class="field"><span id="snippet-tags-label"></span>
+        <input id="snippet-tags" type="text">
+      </label>
+      <label class="field"><span id="snippet-body-label"></span>
+        <textarea id="snippet-body" rows="5"></textarea>
+      </label>
+      <button id="add-snippet" class="primary" type="submit"></button>
+    </form>
+  </section>
+
+  <section>
+    <h2 id="answers-heading"></h2>
+    <p id="answers-lead" class="muted"></p>
+    <div id="answers"></div>
+  </section>
+  </main>
+
+  <script src="../storage/schema.js"></script>
+  <script src="../matching/normalize.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

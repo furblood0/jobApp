@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Başvuru Doldur</title>
+  <link rel="stylesheet" href="../ui.css">
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="mark">Başvuru Doldur</p>
+      <h1>Bu form</h1>
+    </div>
+    <button id="open-options" type="button">Profil</button>
+  </header>
+  <p id="status" class="status">Formun açık olduğu sekmeye geç, Tara'ya bas.</p>
+  <div id="lang-bar" class="lang-bar" hidden>
+    <p id="lang-label">Bu form: Türkçe</p>
+    <div class="switch" role="group">
+      <button id="use-tr" type="button">Türkçe</button>
+      <button id="use-en" type="button">English</button>
+    </div>
+  </div>
+  <div id="summary" class="summary" hidden>
+    <p><strong id="count-all">0</strong><span>Kutu</span></p>
+    <p><strong id="count-selected">0</strong><span>Seçili</span></p>
+    <p><strong id="count-ask">0</strong><span>Onay</span></p>
+    <p><strong id="count-empty">0</strong><span>Boş</span></p>
+  </div>
+  <div id="list" class="list"></div>
+  <p class="footnote">Gönder butonuna basılmaz. Veri bu tarayıcıda kalır.</p>
+  <footer>
+    <button id="scan" type="button">Tara</button>
+    <button id="fill" type="button" class="primary" disabled>Doldur</button>
+  </footer>
+  <script src="../storage/schema.js"></script>
+  <script src="../matching/normalize.js"></script>
+  <script src="../matching/synonyms.js"></script>
+  <script src="../matching/pick.js"></script>
+  <script src="../matching/match.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>
